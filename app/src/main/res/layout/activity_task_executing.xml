@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_task_pause"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_task_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp30">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_hostname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_toStartOf="@id/tv_time"
+                android:drawableStart="@drawable/icon_hostname"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp10"
+                android:text="reeman-001-010"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_toStartOf="@id/tv_battery"
+                android:gravity="center"
+                android:text="12:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+            <TextView
+                android:id="@+id/tv_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:drawableStart="@drawable/icon_battery"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp10"
+                android:text="100%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/task_fragment_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        />
+
+
+</LinearLayout>

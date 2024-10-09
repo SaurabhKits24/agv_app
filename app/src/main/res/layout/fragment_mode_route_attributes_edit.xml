@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_main"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/dp15">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_only_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_return"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp24" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/text_route_setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp30" />
+
+
+        <TextView
+            android:id="@+id/tv_return_and_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp20"
+            android:text="@string/text_save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp24" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:text="@string/text_route_name_setting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item">
+
+
+                <EditText
+                    android:id="@+id/et_route_name"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_please_input_route_name"
+                    android:inputType="text"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_black"
+                    android:textSize="@dimen/sp20" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:text="@string/text_task_finish_action"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item">
+
+                <RadioGroup
+                    android:id="@+id/rg_finish_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_return_product_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:padding="5dp"
+                        android:text="@string/text_return_product_point"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp24" />
+
+                    <RadioButton
+                        android:id="@+id/rb_return_charge_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:padding="5dp"
+                        android:text="@string/text_return_charge_point"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp24" />
+
+                    <RadioButton
+                        android:id="@+id/rb_start_route_cruising_again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/text_start_route_cruising_again"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp24" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_task_cycle_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp20"
+                    android:text="@string/text_task_cycle_switch"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp24" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_setting_item">
+
+
+                    <RadioGroup
+                        android:layout_margin="@dimen/dp10"
+                        android:id="@+id/rg_task_cycle_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_open_task_cycle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:paddingStart="@dimen/dp10"
+                            android:text="@string/text_open"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp24" />
+
+                        <RadioButton
+                            android:id="@+id/rb_close_task_cycle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/sp24"
+                            android:checked="true"
+                            android:paddingStart="@dimen/dp10"
+                            android:text="@string/text_close"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp24" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_task_again_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp20"
+                    android:text="@string/text_task_again_interval"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp24" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_setting_item"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_task_again_interval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:layout_gravity="center"
+                        android:text="00:01:30"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp24" />
+
+                    <ImageView
+                        android:id="@+id/iv_task_aging_interval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:padding="@dimen/dp10"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_edit"
+                        android:text="@string/text_change"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_task_points"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp24" />
+
+                    <ImageView
+                        android:id="@+id/iv_edit_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp10"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:src="@drawable/icon_edit_white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_setting_item"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_no_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:text="@string/text_please_click_edit_button_choose_point"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/sp24"
+                        android:textColor="@color/red"
+                        android:visibility="gone"
+                        />
+
+                    <com.reeman.agv.widgets.AutoWrapTextViewGroup
+
+                        android:id="@+id/awtvg_points"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp20"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

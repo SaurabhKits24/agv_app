@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_main_content"
+    android:background="@drawable/bg_main"
+    android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp30"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#142349"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="@dimen/dp10"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/bg_robot" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_mode_normal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp10"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:drawableTop="@drawable/icon_mode_normal"
+                android:paddingTop="50dp"
+                android:text="@string/text_mode_normal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp30" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_mode_route"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp10"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:drawableTop="@drawable/icon_mode_route"
+                android:paddingTop="50dp"
+                android:text="@string/text_mode_route"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp30" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_mode_qrcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp10"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:drawableTop="@drawable/icon_mode_qrcode"
+                android:paddingTop="50dp"
+                android:text="@string/text_mode_qrcode"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp30" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibtn_connect_wifi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp25"
+                android:layout_weight="1"
+                android:background="@drawable/button_state_animator"
+                android:elevation="@dimen/dp30"
+                android:src="@drawable/icon_connect_wifi"
+                android:stateListAnimator="@null"
+                android:translationZ="@dimen/dp30" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibtn_charge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp25"
+                android:layout_weight="1"
+                android:background="@drawable/button_state_animator"
+                android:elevation="@dimen/dp30"
+                android:src="@drawable/icon_charging_pile"
+                android:stateListAnimator="@null"
+                android:translationZ="@dimen/dp30" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibtn_product"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp25"
+                android:layout_weight="1"
+                android:background="@drawable/button_state_animator"
+                android:elevation="@dimen/dp30"
+                android:src="@drawable/icon_product_point"
+                android:stateListAnimator="@null"
+                android:translationZ="@dimen/dp30" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibtn_setting"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp25"
+                android:layout_weight="1"
+                android:background="@drawable/button_state_animator"
+                android:elevation="@dimen/dp30"
+                android:src="@drawable/icon_more_settings"
+                android:stateListAnimator="@null"
+                android:translationZ="@dimen/dp30" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibtn_more_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp25"
+                android:layout_weight="1"
+                android:background="@drawable/button_state_animator"
+                android:elevation="@dimen/dp30"
+                android:src="@drawable/icon_more_info"
+                android:stateListAnimator="@null"
+                android:translationZ="@dimen/dp30" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

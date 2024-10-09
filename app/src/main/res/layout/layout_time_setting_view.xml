@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_hours"
+            android:textColor="#66CCFF"
+            android:textSize="@dimen/sp22" />
+
+        <ImageButton
+            android:id="@+id/ib_hours_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/icon_subtract" />
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/sb_hours"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_weight="8"
+            android:paddingTop="@dimen/dp10"
+            app:isb_indicator_color="#66CCFF"
+            app:isb_indicator_text_color="@android:color/white"
+            app:isb_indicator_text_size="@dimen/sp18"
+            app:isb_max="23"
+            app:isb_min="0"
+            app:isb_progress="0"
+            app:isb_seek_smoothly="true"
+            app:isb_show_indicator="rounded_rectangle"
+            app:isb_show_thumb_text="true"
+            app:isb_thumb_color="#66CCFF"
+            app:isb_thumb_size="24dp"
+            app:isb_thumb_text_color="#66CCFF"
+            app:isb_track_background_color="#eeeeee"
+            app:isb_track_background_size="4dp"
+            app:isb_track_progress_color="#66CCFF"
+            app:isb_track_progress_size="4dp" />
+
+        <ImageButton
+            android:id="@+id/ib_hours_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:layout_marginEnd="@dimen/dp10"
+            android:src="@drawable/icon_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_minutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_minutes"
+            android:textColor="#66CCFF"
+            android:textSize="@dimen/sp22" />
+
+        <ImageButton
+            android:id="@+id/ib_minutes_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/icon_subtract" />
+
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/sb_minutes"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_weight="8"
+            android:paddingTop="@dimen/dp10"
+            app:isb_indicator_color="#66CCFF"
+            app:isb_indicator_text_color="@android:color/white"
+            app:isb_indicator_text_size="@dimen/sp18"
+            app:isb_max="59"
+            app:isb_min="0"
+            app:isb_progress="0"
+            app:isb_seek_smoothly="true"
+            app:isb_show_indicator="rounded_rectangle"
+            app:isb_show_thumb_text="true"
+            app:isb_thumb_color="#66CCFF"
+            app:isb_thumb_size="24dp"
+            app:isb_thumb_text_color="#66CCFF"
+            app:isb_track_background_color="#eeeeee"
+            app:isb_track_background_size="4dp"
+            app:isb_track_progress_color="#66CCFF"
+            app:isb_track_progress_size="4dp" />
+
+        <ImageButton
+            android:id="@+id/ib_minutes_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:layout_marginEnd="@dimen/dp10"
+            android:src="@drawable/icon_add" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_seconds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_seconds"
+            android:textColor="#66CCFF"
+            android:textSize="@dimen/sp22" />
+
+        <ImageButton
+            android:id="@+id/ib_seconds_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/icon_subtract" />
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/sb_seconds"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_weight="8"
+            android:paddingTop="@dimen/dp10"
+            app:isb_indicator_color="#66CCFF"
+            app:isb_indicator_text_color="@android:color/white"
+            app:isb_indicator_text_size="@dimen/sp18"
+            app:isb_max="59"
+            app:isb_min="0"
+            app:isb_progress="30"
+            app:isb_seek_smoothly="true"
+            app:isb_show_indicator="rounded_rectangle"
+            app:isb_show_thumb_text="true"
+            app:isb_thumb_color="#66CCFF"
+            app:isb_thumb_size="24dp"
+            app:isb_thumb_text_color="#66CCFF"
+            app:isb_track_background_color="#eeeeee"
+            app:isb_track_background_size="4dp"
+            app:isb_track_progress_color="#66CCFF"
+            app:isb_track_progress_size="4dp" />
+
+        <ImageButton
+            android:id="@+id/ib_seconds_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:layout_marginEnd="@dimen/dp10"
+            android:src="@drawable/icon_add" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/et_total_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center"
+        android:text="@string/text_total_time"
+        android:textColor="#66CCFF"
+        android:textSize="@dimen/sp22" />
+
+</LinearLayout>

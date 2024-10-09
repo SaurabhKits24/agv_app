@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#CCCCCC" /> <!-- 设置分割线的颜色 -->
+    <size android:height="0.5dp" /> <!-- 设置分割线的高度 -->
+</shape>

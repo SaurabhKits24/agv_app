@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp30"
+    android:paddingTop="@dimen/dp20"
+    android:paddingRight="@dimen/dp30"
+    android:paddingBottom="@dimen/dp20">
+
+    <TextView
+        android:id="@+id/tv_wifi_title"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_wifi_auth"
+        android:textColor="#333"
+        android:textSize="@dimen/sp24" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wifi_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp15">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_wifi_name"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_wifi_name"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:textSize="@dimen/sp20" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_wifi_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_wifi_name"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_wifi_password"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp25"
+            android:hint="@string/text_wifi_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textSize="@dimen/sp20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_wifi_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp40"
+            android:background="@drawable/bg_common_button_inactive"
+            android:padding="@dimen/dp10"
+            android:text="@string/text_cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp20" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_common_button_pressed"
+            android:padding="@dimen/dp10"
+            android:text="@string/text_confirm"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp20" />
+    </LinearLayout>
+
+</RelativeLayout>

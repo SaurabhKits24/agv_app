@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp15">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_robot_info"
+        android:textColor="#2C8CEF"
+        android:textSize="@dimen/sp26"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:orientation="vertical">
+
+        
+        <TextView
+            android:id="@+id/tv_ros_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ros_wifi"
+            android:padding="8dp"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/tv_ros_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ros_ip"
+            android:padding="8dp"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/tv_android_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_android_wifi"
+            android:padding="8dp"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/tv_android_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_android_ip"
+            android:padding="8dp"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/tv_ros_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ros_version"
+            android:padding="8dp"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/tv_power_board_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_power_board_version"
+            android:padding="8dp"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/tv_app_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_app_ver"
+            android:padding="8dp"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/tv_current_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_current_map"
+            android:padding="8dp"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/text_black"/>
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/selector_common_button"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:text="@string/text_confirm"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp26" />
+
+</RelativeLayout>

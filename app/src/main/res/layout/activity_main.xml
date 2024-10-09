@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/dp30"
+    android:paddingStart="@dimen/dp30"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:src="@drawable/icon_home"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+            <TextView
+                android:id="@+id/tv_call_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp20"
+                android:layout_toStartOf="@id/tv_call"
+                android:drawableStart="@drawable/icon_call_button"
+                android:drawablePadding="@dimen/dp10"
+                android:visibility="gone"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp20"
+                android:layout_toStartOf="@id/tv_hostname"
+                android:drawableStart="@drawable/icon_call"
+                android:drawablePadding="@dimen/dp10"
+                android:visibility="gone"
+                android:gravity="center"
+                 />
+
+            <TextView
+                android:id="@+id/tv_hostname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_toStartOf="@id/tv_ssid"
+                android:drawableStart="@drawable/icon_hostname"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp10"
+                android:text="reeman-001-010"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+            <TextView
+                android:id="@+id/tv_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_toStartOf="@+id/tv_time"
+                android:drawableStart="@drawable/icon_wifi_on"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp10"
+                android:text="Developer_5G"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_toStartOf="@id/tv_battery"
+                android:gravity="center"
+                android:text="12:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+            <TextView
+                android:id="@+id/tv_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:drawableStart="@drawable/icon_battery"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp10"
+                android:text="100%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/main_fragment_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        />
+
+
+</LinearLayout>

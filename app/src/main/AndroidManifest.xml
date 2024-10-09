@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 访问蓝牙状态，需要蓝牙信息用于网络定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 支持A-GPS辅助定位 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon_agv"
+        android:installLocation="preferExternal"
+        android:label="AGVT"
+        android:roundIcon="@mipmap/icon_agv"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AGV"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="33">
+        <activity
+            android:name=".activities.DoorControlTestActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.QRCodeCallingConfigActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AliasSettingActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.CallingConfigActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.TaskExecutingActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.WiFiConnectActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".widgets.FloatEditorActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.LanguageSelectActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.CrashActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.QRCodeCallingBoundActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:configChanges="orientation|screenSize|mcc|mnc|locale|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize|touchscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <service android:name=".calling.service.CallingService" />
+        <service android:name=".service.RobotService" />
+    </application>
+
+</manifest>

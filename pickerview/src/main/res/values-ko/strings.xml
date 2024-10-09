@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pickerview_cancel">취소</string>
+    <string name="pickerview_submit">확인</string>
+    <string name="pickerview_year">년</string>
+    <string name="pickerview_month">월</string>
+    <string name="pickerview_day">하루</string>
+    <string name="pickerview_hours">시간</string>
+    <string name="pickerview_minutes">분</string>
+    <string name="pickerview_seconds">초</string>
+</resources>

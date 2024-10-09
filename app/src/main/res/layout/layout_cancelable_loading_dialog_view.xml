@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:minWidth="190dp"
+    android:minHeight="100dp"
+    android:orientation="vertical"
+    android:paddingStart="60dp"
+    android:paddingTop="60dp"
+    android:paddingEnd="60dp"
+    android:paddingBottom="@dimen/dp20">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="#0066aa" />
+
+
+    <TextView
+        android:id="@+id/tv_loading_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginBottom="@dimen/dp25"
+        android:textColor="#999"
+        android:textSize="@dimen/sp18" />
+
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_common_button_inactive"
+        android:text="@string/text_cancel"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp22" />
+
+</LinearLayout>

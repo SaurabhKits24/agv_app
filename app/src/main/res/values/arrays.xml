@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>English</item>
+        <item>中文(简体)</item>
+        <item>日本語</item>
+        <item>한국인</item>
+        <item>Español</item>
+        <item>ภาษาไทย</item>
+        <item>粤语</item>
+        <item>Nederlands</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Magyar</item>
+        <item>اللغة العربية</item>
+        <item>中文(繁體)</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <string-array name="runningSpeed">
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.5</item>
+        <item>0.6</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>0.9</item>
+        <item>1.0</item>
+    </string-array>
+</resources>

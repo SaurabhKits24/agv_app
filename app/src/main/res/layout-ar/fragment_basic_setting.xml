@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp20"
+        android:paddingTop="5dp"
+        android:paddingEnd="@dimen/dp20"
+        android:paddingBottom="@dimen/dp15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_volume_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <ImageButton
+                    android:id="@+id/ib_decrease_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/dp20"
+                    android:src="@drawable/icon_subtract" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/isb_volume"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:isb_indicator_color="#66CCFF"
+                    app:isb_indicator_text_color="@android:color/white"
+                    app:isb_indicator_text_size="@dimen/sp18"
+                    app:isb_max="15"
+                    app:isb_min="0"
+                    app:isb_only_thumb_draggable="true"
+                    app:isb_seek_smoothly="true"
+                    app:isb_show_indicator="rounded_rectangle"
+                    app:isb_show_thumb_text="true"
+                    app:isb_thumb_color="#66CCFF"
+                    app:isb_thumb_size="24dp"
+                    app:isb_thumb_text_color="#66CCFF"
+                    app:isb_track_background_color="#eeeeee"
+                    app:isb_track_background_size="4dp"
+                    app:isb_track_progress_color="#66CCFF"
+                    app:isb_track_progress_size="4dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_increase_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/dp20"
+                    android:src="@drawable/icon_add" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_brightness_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <ImageButton
+                    android:id="@+id/ib_decrease_brightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/dp20"
+                    android:src="@drawable/icon_subtract" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/isb_brightness"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:isb_indicator_color="#66CCFF"
+                    app:isb_indicator_text_color="@android:color/white"
+                    app:isb_indicator_text_size="@dimen/sp18"
+                    app:isb_max="100"
+                    app:isb_min="0"
+                    app:isb_only_thumb_draggable="true"
+                    app:isb_seek_smoothly="true"
+                    app:isb_show_indicator="rounded_rectangle"
+                    app:isb_show_thumb_text="true"
+                    app:isb_thumb_color="#66CCFF"
+                    app:isb_thumb_size="24dp"
+                    app:isb_thumb_text_color="#66CCFF"
+                    app:isb_track_background_color="#eeeeee"
+                    app:isb_track_background_size="4dp"
+                    app:isb_track_progress_color="#66CCFF"
+                    app:isb_track_progress_size="4dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_increase_brightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/dp20"
+                    android:src="@drawable/icon_add" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_low_power_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <ImageButton
+                    android:id="@+id/ib_decrease_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/dp20"
+                    android:src="@drawable/icon_subtract" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/isb_power"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:isb_indicator_color="#66CCFF"
+                    app:isb_indicator_text_color="@android:color/white"
+                    app:isb_indicator_text_size="@dimen/sp18"
+                    app:isb_max="100"
+                    app:isb_min="0"
+                    app:isb_only_thumb_draggable="true"
+                    app:isb_seek_smoothly="true"
+                    app:isb_show_indicator="rounded_rectangle"
+                    app:isb_show_thumb_text="true"
+                    app:isb_thumb_color="#66CCFF"
+                    app:isb_thumb_size="24dp"
+                    app:isb_thumb_text_color="#66CCFF"
+                    app:isb_track_background_color="#eeeeee"
+                    app:isb_track_background_size="4dp"
+                    app:isb_track_progress_color="#66CCFF"
+                    app:isb_track_progress_size="4dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_increase_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/dp20"
+                    android:src="@drawable/icon_add" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_encounter_obstacle_prompt"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp20" />
+
+                <ImageButton
+                    android:id="@+id/ib_add_encounter_obstacle_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/dp15"
+                    android:src="@drawable/icon_add_item" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:clipChildren="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_enable_encounter_obstacle_prompt"
+                        android:textSize="@dimen/sp20" />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sw_enable_obstacle_prompt"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:checked="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        app:kswBackColor="@android:color/holo_blue_dark"
+                        app:kswTextAdjust="-2dp"
+                        app:kswTextExtra="8dp"
+                        app:kswTextOff="ON"
+                        app:kswTextOn="OFF"
+                        app:kswThumbColor="@android:color/white"
+                        app:kswThumbHeight="@dimen/dp30"
+                        app:kswThumbWidth="@dimen/dp35" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_obstacle_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_music_play"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/et_music_normal_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_marginEnd="@dimen/dp15"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#777"
+                    android:textSize="@dimen/sp20"  />
+
+                <Button
+                    android:id="@+id/btn_music_choose_normal_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:background="@drawable/selector_common_button"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/text_music_choose"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp24" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sw_route_mode_enable_background_music"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp18"
+                    app:kswBackColor="@android:color/holo_blue_dark"
+                    app:kswTextAdjust="-2dp"
+                    app:kswTextExtra="8dp"
+                    app:kswTextOff="ON"
+                    app:kswTextOn="OFF"
+                    app:kswThumbColor="@android:color/white"
+                    app:kswThumbHeight="30dp"
+                    app:kswThumbWidth="35dp" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_navigation_model_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <RadioGroup
+                    android:id="@+id/rg_setting_navigation_model_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_auto_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#66CCFF"
+                        android:checked="true"
+                        android:text="@string/text_auto_model"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                    <RadioButton
+                        android:id="@+id/rb_fix_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:backgroundTint="#66CCFF"
+                        android:text="@string/text_fix_model"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_setting_password"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <RadioGroup
+                    android:id="@+id/rg_setting_password_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_open_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#66CCFF"
+                        android:checked="true"
+                        android:text="@string/text_open"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                    <RadioButton
+                        android:id="@+id/rb_close_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:backgroundTint="#66CCFF"
+                        android:text="@string/text_close"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_switch_commuting_time"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <RadioGroup
+                    android:id="@+id/rg_setting_commuting_time_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_open_commuting_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#66CCFF"
+                        android:checked="true"
+                        android:text="@string/text_open"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                    <RadioButton
+                        android:id="@+id/rb_close_commuting_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:backgroundTint="#66CCFF"
+                        android:text="@string/text_close"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_commuting_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_setting_commuting_time"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10">
+
+                    <TextView
+                        android:id="@+id/tv_working_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp20"
+                        android:text="@string/text_working_time"
+                        android:textAllCaps="false"
+
+                        android:textSize="@dimen/sp20" />
+
+                    <Button
+                        android:id="@+id/btn_working_time_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_button"
+                        android:text="@string/text_setting"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10">
+
+                    <TextView
+                        android:id="@+id/tv_after_work_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp20"
+                        android:text="@string/text_after_work_time"
+                        android:textAllCaps="false"
+
+                        android:textSize="@dimen/sp20" />
+
+                    <Button
+                        android:id="@+id/btn_after_work_time_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_button"
+                        android:text="@string/text_setting"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp20" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_auto_work_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_auto_work_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <ImageButton
+                    android:id="@+id/ib_decrease_auto_work_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/dp20"
+                    android:src="@drawable/icon_subtract" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/isb_auto_work_power"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:isb_indicator_color="#66CCFF"
+                    app:isb_indicator_text_color="@android:color/white"
+                    app:isb_indicator_text_size="@dimen/sp18"
+                    app:isb_max="100"
+                    app:isb_min="0"
+                    app:isb_only_thumb_draggable="true"
+                    app:isb_progress="90"
+                    app:isb_seek_smoothly="true"
+                    app:isb_show_indicator="rounded_rectangle"
+                    app:isb_show_thumb_text="true"
+                    app:isb_thumb_color="#66CCFF"
+                    app:isb_thumb_size="24dp"
+                    app:isb_thumb_text_color="#66CCFF"
+                    app:isb_track_background_color="#eeeeee"
+                    app:isb_track_background_size="4dp"
+                    app:isb_track_progress_color="#66CCFF"
+                    app:isb_track_progress_size="4dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_increase_auto_work_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/dp20"
+                    android:src="@drawable/icon_add" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_lift_model_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_with_lift_model"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <RadioGroup
+                    android:id="@+id/rg_setting_with_lift_model_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_with_lift_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#66CCFF"
+                        android:checked="true"
+                        android:text="@string/text_installed"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                    <RadioButton
+                        android:id="@+id/rb_without_lift_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:backgroundTint="#66CCFF"
+                        android:text="@string/text_not_installed"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_stop_nearby"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <RadioGroup
+                    android:id="@+id/rg_setting_stop_nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_open_stop_nearby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#66CCFF"
+                        android:checked="true"
+                        android:text="@string/text_open"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                    <RadioButton
+                        android:id="@+id/rb_close_stop_nearby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:backgroundTint="#66CCFF"
+                        android:text="@string/text_close"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_point_show_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <RadioGroup
+                    android:id="@+id/rg_point_show_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_scroll_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#66CCFF"
+                        android:checked="true"
+                        android:text="@string/text_scroll_show"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                    <RadioButton
+                        android:id="@+id/rb_pagination_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:backgroundTint="#66CCFF"
+                        android:text="@string/text_pagination_show"
+                        android:textColor="#777"
+                        android:textSize="@dimen/sp20" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_dock_charging_pile"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+
+                <Button
+                    android:id="@+id/btn_dock_charging_pile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_button"
+                    android:text="@string/text_dock_charging_pile"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp20" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_relocate"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+
+
+                <Button
+                    android:id="@+id/btn_relocate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_button"
+                    android:text="@string/text_relocate"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp20" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_switch_map"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <Button
+                    android:id="@+id/btn_switch_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_button"
+                    android:text="@string/text_switch_map"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp20" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_alias_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_setting_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/tv_alias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp20"
+                    android:textColor="#777"
+                    android:layout_marginEnd="@dimen/dp20"
+                    />
+
+                <Button
+                    android:id="@+id/btn_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_button"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:text="@string/text_change"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp20" />
+
+            </LinearLayout>
+        </LinearLayout>    </LinearLayout>
+
+</ScrollView>
