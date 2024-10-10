@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 
 import com.reeman.agv.R;
 import com.reeman.agv.activities.SettingActivity;
@@ -27,6 +28,7 @@ import com.reeman.agv.widgets.EasyDialog;
 import com.reeman.agv.widgets.RobotInfoDialog;
 
 public class MainContentFragment extends BaseFragment implements EasyDialog.OnViewClickListener{
+
     @Override
     protected int getLayoutRes() {
         return R.layout.fragment_main_content;
@@ -49,6 +51,12 @@ public class MainContentFragment extends BaseFragment implements EasyDialog.OnVi
         $(R.id.ibtn_product).setOnClickListener(this);
         $(R.id.ibtn_setting).setOnClickListener(this);
         $(R.id.ibtn_more_info).setOnClickListener(this);
+        $(R.id.ibtn_close).setOnClickListener(new View.OnClickListener() {
+                                                  @Override
+                                                  public void onClick(View v) {
+                                                      requireActivity().finish(); // This will close the activity
+                                                  }
+                                              });
         ViewUtils.resetViewHeight($(R.id.fragment_main_content),
                 R.id.ibtn_connect_wifi,
                 R.id.ibtn_charge,
@@ -132,4 +140,5 @@ public class MainContentFragment extends BaseFragment implements EasyDialog.OnVi
     public interface OnMainContentClickListener{
         void onModeClick(TaskMode mode);
     }
+
 }

@@ -153,6 +153,19 @@
                 android:stateListAnimator="@null"
                 android:translationZ="@dimen/dp30" />
 
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibtn_close"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp25"
+                android:layout_weight="1"
+                android:background="@drawable/button_state_animator"
+                android:elevation="@dimen/dp30"
+                android:src="@drawable/icon_power"
+                android:stateListAnimator="@null"
+                android:translationZ="@dimen/dp30" />
+
         </LinearLayout>
 
     </LinearLayout>

@@ -7,4 +7,5 @@ public enum TaskMode {
     MODE_CHARGE,//充电模式
     MODE_START_POINT,//返回起始点
     MODE_CALLING,//呼叫模式
+
 }
